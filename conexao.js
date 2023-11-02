@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-
+//conexão com banco de dados
 const sequelize = new Sequelize('cadastro_aluno', 'Douglas', 'batata5.', {
     host: 'museus.mysql.database.azure.com',
     dialect: 'mysql',
