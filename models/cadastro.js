@@ -22,8 +22,10 @@ const Aluno = sequelize.define('Aluno', {
     }
   },
   {
+    //Para não criar a coluna createdAt e updateAt do sequelize e 
+    //também para não pluralizar a tabela 
     timestamps: false,
-    freezeTableName: true // Evita a pluralização automática do nome da tabela
+    freezeTableName: true
   });
   
   // Sincronize o modelo com o banco de dados
